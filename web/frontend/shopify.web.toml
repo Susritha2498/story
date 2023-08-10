@@ -1,0 +1,18 @@
+type="frontend"
+auth_callback_path = ["/"]
+
+[commands]
+dev = "npm run dev"
+build = "npm run build"
+dev-build="npm run dev-build"
+
+ 
+reset= "yarn copyfiles -f ./envs/dev/* ./src/Features/Constants"
+dev-deploy= "yarn dev-build && aws s3 sync build/ s3://d-live-zepter-admin-shopify --delete && yarn dev-invalidate2 && yarn dev-invalidate && yarn reset "
+qa-build= "yarn copyfiles -f ./envs/qa/* ./src/Features/Constants && build"
+qa-deploy= "yarn qa-build && aws s3 sync build/ s3://q-live-admin --delete && yarn qa-invalidate && yarn reset"
+prod-build= "yarn copyfiles -f ./envs/prod/* ./src/Features/Constants && build"
+prod-deploy= "yarn prod-build && aws s3 sync build/ s3://l-live-zepter-admin-shopify --delete && yarn prod-invalidate"
+zepter-build= "yarn  && yarn copyfiles -f ./envs/zepter/*.* ./src/Features/Constants && build"
+zepter-deploy= "yarn zepter-build && aws s3 sync build/ s3://q-live-zepter-admin-shopify --delete && yarn zepter-invalidate"
+    

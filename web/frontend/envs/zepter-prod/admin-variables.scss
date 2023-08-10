@@ -1,0 +1,280 @@
+$PrimaryColor: #ec268f;
+$SecondaryColor: #580880;
+$TertiaryColor: #31b9f3;
+$ErrorColor: #e00d0d;
+$DisabledColor: #8d8e8e;
+
+//primary button
+$primaryBtn: gold;
+//actual theme
+$primaryBtnShade: #580880;
+$primaryBtnText: white;
+$primaryBtnBkgrnd: linear-gradient(156.5deg, gold 0%, goldenrod 100%) !important;
+
+//secondary button
+$secondaryBtn: white;
+$secondaryBtnShade: ivory;
+$secondaryBtnBorder: gold;
+$secondaryBtnBorderShade: #580880;
+$secondaryBtnText: #580880;
+$backgroundlight: #e8f5fa;
+
+//underline
+$underlineColor: gold;
+
+//text
+$textClr: white;
+$textShade: gray;
+
+//link
+$linkhover: rgb(170, 151, 40);
+
+//chart
+$chartColors: (#ec268f, #31b9f3, #12e17e, #44bdd6, #f58b13, #a15fb0, #ef7dab, #8bc34a, #ffca28, #607d8b);
+
+.MuiCircularProgress-colorPrimary {
+    color: $PrimaryColor;
+}
+
+.MuiButton-contained {
+    background-color: $SecondaryColor !important;
+    color: $textClr !important;
+    &:hover {
+        background-color: $SecondaryColor !important;
+    }
+}
+.MuiButton-textPrimary {
+    color: $primaryBtnShade !important;
+}
+
+.MuiButton-outlined {
+    color: $primaryBtnShade !important;
+}
+
+a {
+    color: $SecondaryColor;
+}
+a:hover {
+    color: $SecondaryColor !important;
+}
+
+//change checkbox color
+
+.jss19 {
+    fill: $primaryBtn !important;
+}
+//change clear all color in email-dialog
+.kn-selection_status__clear_all___3gppf {
+    color: $primaryBtnShade;
+}
+
+//change color of toggle button
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #000;
+    background-color: $primaryBtn;
+}
+
+//change color of input box in create event page
+.form-control:focus {
+    color: $textShade;
+    background-color: #fff;
+    border-color: $primaryBtn;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $primaryBtn;
+}
+
+//change the calendar color
+.MuiPickersToolbar-toolbar {
+    background-color: $primaryBtnShade !important;
+}
+
+.MuiPickerDTTabs-tabs {
+    background-color: white !important;
+}
+
+.MuiPickersDay-daySelected {
+    background-color: $primaryBtnShade !important;
+}
+.MuiPickersClock-pin {
+    background-color: $primaryBtnShade !important;
+}
+.MuiPickersClockPointer-pointer {
+    background-color: $primaryBtnShade !important;
+}
+.MuiPickersClockPointer-thumb {
+    border-color: $primaryBtnShade !important;
+}
+.MuiPickersClockPointer-noPoint {
+    background-color: $primaryBtnShade !important;
+}
+// .MuiFormLabel-root.Mui-focused{
+//     color: $primaryBtnShade !important;
+// }
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: $primaryBtnShade !important;
+}
+
+$Coverbackground: #e5e5e5;
+
+// Font
+$PrimaryFontFamily: "Inter", sans-serif;
+$SecondaryFontColor: #580880;
+$PrimaryFontColor: #1a1d1e;
+$TirtaryFontColor: #8d8e8e;
+$ActiveFontColor: #ec268f;
+$FifthFontColor: #5a5b5c;
+$SixthFontColor: #666666;
+$DengerFontColor: #eb5757;
+$FourthFontColor: #5f6161;
+
+// Font Weight
+$PrimaryFontWeight: 500;
+$SecondaryFontWeight: 600;
+
+// Button
+$primaryBtnTextColor: #580880;
+$primaryBtnActive: #580880;
+$FourthButtonColour: #faf0f5;
+$primaryborderbutton: #faf0f5;
+$buttonBackgroundPri: #ffffff;
+$SecondaryButtonBackgroung: #f4e8fa;
+$FifthButtonColour: #f4e8fa;
+
+$LinkActive: #fae8f2;
+
+//change the calendar color
+// .MuiPickersToolbar-toolbar {
+//     background-color: $ActiveFontColor !important;
+// }
+
+// .MuiPickerDTTabs-tabs {
+//     background-color: white !important;
+// }
+
+// .MuiPickersDay-daySelected {
+//     background-color: $ActiveFontColor !important;
+// }
+// .MuiPickersClock-pin {
+//     background-color: $ActiveFontColor !important;
+// }
+// .MuiPickersClockPointer-pointer {
+//     background-color: $ActiveFontColor !important;
+// }
+// .MuiPickersClockPointer-thumb {
+//     border-color: $ActiveFontColor !important;
+// }
+// .MuiPickersClockPointer-noPoint {
+//     background-color: $ActiveFontColor !important;
+// }
+// .MuiFormLabel-root.Mui-focused{
+//     color: $ActiveFontColor !important;
+// }
+// .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+//     border-color: $ActiveFontColor !important;
+// }
+// .MuiIconButton-label>.MuiSvgIcon-root{
+//     color: $ActiveFontColor !important;
+// }
+// // .MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary> span{
+// //     color: $ActiveFontColor;
+// // }
+
+.MuiPickersDay-daySelected {
+    background-color: $PrimaryColor !important;
+}
+.MuiPickersClock-pin {
+    background-color: $PrimaryColor !important;
+}
+.MuiPickersClockPointer-pointer {
+    background-color: $PrimaryColor !important;
+}
+.MuiPickersClockPointer-thumb {
+    border-color: $PrimaryColor !important;
+}
+.MuiPickersClockPointer-noPoint {
+    background-color: $PrimaryColor !important;
+}
+.MuiIconButton-label > .MuiSvgIcon-root,
+.MuiTab-wrapper > .MuiSvgIcon-root {
+    color: $PrimaryColor !important;
+}
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary > span {
+    color: $PrimaryColor ;
+}
+.MuiPickersToolbar-toolbar {
+    background-color: $PrimaryColor !important;
+}
+
+// Chat
+$ChatBackground: #31b9f3 !important;
+$BackgroundColour: #f5f8fa;
+
+//Admin-facrlift-vatiables
+
+// Background colours
+$PrimaryBG: #e5e5e5;
+$secondaryBG: #ffffff;
+$tirtaryBG: #efefef;
+$FourthBG: #eeeeee;
+$FifthBG: #f4e8fa;
+$SixthBG: rgba(255, 255, 255, 0.5);
+$seventhBG: #e8f5fa;
+$EighthBG: #f9f9fa;
+$NinethBG: #eeeeee;
+$TenthBG: #c4c4c4;
+$ElevenBG: #baf03b;
+$twelthBG: #f9e0ed;
+$theethBG: #580880;
+
+// Polls Backgroung colour
+$PollsProgres: #fafafa;
+$PollsProgres2: #faf0f5;
+$PollsProgres3: #edeeee;
+$PollsBackgroundMax: #f8eaf2;
+$PollsBackgroundMin: #efeeee;
+
+// Backgroundgradiants
+$Gradient1: linear-gradient(180deg, #f5f8fa 34.97%, rgba(255, 255, 255, 0) 100%);
+$Gradient2: linear-gradient(137.68deg, #eaf1f3 15.03%, rgba(234, 241, 243, 0) 50.9%);
+$Gradient3: linear-gradient(180deg, rgba(26, 29, 30, 0.03) -12.73%, rgba(26, 29, 30, 0) 100%);
+$Gradient4: linear-gradient(180deg, #f5f8fa -15.33%, rgba(255, 255, 255, 0) 100%);
+$Gradient5: linear-gradient(90deg, #751ea0 0%, #580880 100%);
+
+$s1Gradient1: linear-gradient(180deg, #f5f8fa 34.97%, rgba(255, 255, 255, 0) 100%);
+
+//Bordercolour
+$Border1: #f4e8fa;
+$Border2: #e7e0ea;
+$Border3: #8d8e8e;
+$Border4: #580880;
+$Border5: rgba(88, 8, 128, 0.06);
+$Border6: #faf0f5;
+$Border7: #f4f7f9;
+$Border8: #ffffff;
+$Border9: #dfdfdf;
+
+// SwitchColour
+$Switch: #8cdc4d;
+
+// BoxShadow
+$Boxshadow: #f4f7f9;
+$Boxshadow1: grey;
+
+
+// Input
+$PrimaryFC: #1a1d1e;
+$SecondaryFC: #31b9f3;
+$TritaryFC: #ec268f;
+
+// Fill
+$FillPrimary: #580880;
+
+// Progress Bar
+$ProgressPrimary: #d2d5d6;
+$ProgressSecondary: #1a1d1e;
+$Boxshadow: #f4f7f9;
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: $Border2 !important;
+}
