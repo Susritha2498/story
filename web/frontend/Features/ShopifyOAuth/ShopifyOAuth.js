@@ -96,7 +96,7 @@ export const doOAuthComplete = async (oAuthState, code) => {
       });
     var returnHere = docUrl().split("?")[0];
     var newUrl =
-      "https://" + shop + "/admin/apps/final-extension/?new_design_language=true";
+      "https://" + shop + "/admin/apps/story-test-1/?new_design_language=true";
     if (shop && shop != "") {
       handleRedirection(newUrl);
     } else {

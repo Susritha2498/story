@@ -39,7 +39,7 @@ export default function HomePage(props) {
   const [isOauthComplete, setIsOauthComplete] = useState(false);
   const [shopURL, setShopURL] = useState("");
   const [isConnected, setisConnected] = useState(false);
-  const [orglist, setorglist] = useState([{"handle":"sampletest2698"}]);
+  const [orglist, setorglist] = useState([]);
   const [integrationToken, setintegrationToken] = useState("");
 
   const docUrl = () => {
@@ -146,7 +146,7 @@ export default function HomePage(props) {
         var newUrl =
           "https://" +
           params.get("shop") +
-          "/admin/apps/final-extension/?new_design_language=true";
+          "/admin/apps/story-test-1/?new_design_language=true";
         if (window.top == window.self && params.has("shop")) {
           console.log("deepak redirect if");
           handleRedirection(newUrl);
@@ -157,18 +157,18 @@ export default function HomePage(props) {
       }
     });
   }, []);
-  // if (!isOauthComplete) {
-  //   return <div>doing auth....</div>;
-  // }
+  if (!isOauthComplete) {
+    return <div>doing auth....</div>;
+  }
 
   return (
     <div className="custom-page">
-      {!showLoader && 
+      {showLoader && 
         (<div className="spinner">
           <Spinner accessibilityLabel="Spinner example" size="large" />
         </div> 
      )}
-      {showLoader == true && !iferror && (
+      {showLoader !== true && !iferror && (
         <Page>
           <Text variant="heading2xl" as="h1">
             Welcome to Revo App
@@ -249,7 +249,7 @@ export default function HomePage(props) {
                   <Button
                     size="small"
                     primary
-                    disabled={!isConnected}
+                    disabled={isConnected}
                     onClick={() => window.open(c.ADMIN_URL + `/products`)}
                     style={{ backgroundColor: "#FF0000" }}
                   >
