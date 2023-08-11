@@ -19,5 +19,5 @@ api_version = "2023-07"
 embedded = false
 
 [build]
-automatically_update_urls_on_dev = true
+automatically_update_urls_on_dev = false
 dev_store_url = "story-testing1.myshopify.com"
